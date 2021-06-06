@@ -130,7 +130,7 @@ header .blog a {
 
 #homepage {
   width: 100%;
-  position: relative;
+  position: absolute;
   padding: 0;
   margin: 0;
 }
@@ -173,6 +173,11 @@ header .blog a {
 ******************/
 
 canvas {
+  display: block;
+  mix-blend-mode: screen;
+}
+
+#ripple {
   margin: 0;
   overflow: hidden;
   width: 100%;
@@ -301,6 +306,7 @@ main .footer a {
 
 .max figure {
   max-width: 550px;
+  cursor: pointer;
 }
 
 .min figure {
