@@ -48,7 +48,7 @@ animation();
 function ripple(e){
 	let x = Math.floor(e.clientX/s);
 	let y = Math.floor(e.clientY/s);
-	buffer1[x][y] = 500;
+	buffer1[x][y] = 300;
 }
 
 document.addEventListener("click", ripple  );
