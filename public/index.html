@@ -165,7 +165,15 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.3/pixi.min.js"></script> -->
     <script src="js/arrow.js"></script>
-    <script src="js/ripple.js"></script>
+    <script src="js/ripple.js" id="ripple-script"></script>
+    <script>
+      $(document).ready( () =>
+        {
+          if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+              $("#ripple-script").remove();
+          }
+      });
+    </script>
     <!-- <script src="public/js/particles.js"></script> -->
     <!-- <script src="js/pixi-app.js"></script> -->
   </body>

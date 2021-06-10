@@ -51,10 +51,12 @@ function ripple(e){
 	buffer1[x][y] = 300;
 }
 
-document.addEventListener("click", ripple  );
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent) == false) {
+  document.addEventListener("click", ripple  );
 
-document.addEventListener("mousemove", ripple  );
+  document.addEventListener("mousemove", ripple  );
 
-window.addEventListener("resize",function(){
-	location.reload();
-});
+  window.addEventListener("resize",function(){
+    location.reload();
+  });
+}
